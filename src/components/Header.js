@@ -1,10 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import {
-    MenuIcon,
-    SearchIcon,
-    ShoppingCartIcon,
-} from "@heroicons/react/outline"
+  MenuIcon,
+  SearchIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/outline";
+
+import { signIn, signOut, useSession } from "next-auth/client";
+
+
 function Header() {
   return (
     <header>
@@ -23,8 +27,9 @@ function Header() {
             <SearchIcon className="h-12 p-4"/>
         </div>
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-            <div className="link" >
-                <p>Hello Abhinav Singh</p>
+          
+            <div className="cursor-pointer-link" >
+                <p onClick={()=> console.log("Hello Abhinav clicked")}>Hello Abhinav Singh</p>
                 <p className="font-extrabold md:text-sm"> Account & List </p>
 
             </div>
