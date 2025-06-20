@@ -29,7 +29,7 @@ function Header() {
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
           
             <div className="cursor-pointer-link" >
-                <p onClick={()=> console.log("Hello Abhinav clicked")}>Hello Abhinav Singh</p>
+                <p onClick={signIn}>Hello Abhinav Singh</p>
                 <p className="font-extrabold md:text-sm"> Account & List </p>
 
             </div>
